@@ -3,7 +3,7 @@ package domain.controller.unidade.federativa;
 import domain.core.controller.BaseController;
 import domain.core.entity.BaseEntityAtivarRequest;
 import domain.core.exception.DomainException;
-import domain.entity.unidade.federativa.UnidadeFederativa;
+import domain.entity.UnidadeFederativa;
 import domain.model.unidade.federativa.IUnidadeFederativaMapper;
 import domain.model.unidade.federativa.UnidadeFederativaRequest;
 import domain.model.unidade.federativa.UnidadeFederativaResponse;

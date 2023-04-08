@@ -3,7 +3,7 @@ package domain.service.unidade.federativa;
 import domain.core.exception.DomainException;
 import domain.core.repository.BaseRepository;
 import domain.core.service.BaseService;
-import domain.entity.unidade.federativa.UnidadeFederativa;
+import domain.entity.UnidadeFederativa;
 import domain.repository.unidade.federativa.UnidadeFederativaRepository;
 import org.springframework.stereotype.Service;
 
