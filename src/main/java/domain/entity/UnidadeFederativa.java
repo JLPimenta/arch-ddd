@@ -1,4 +1,4 @@
-package domain.entity.unidade.federativa;
+package domain.entity;
 
 import domain.core.entity.BaseEntity;
 import jakarta.persistence.Column;

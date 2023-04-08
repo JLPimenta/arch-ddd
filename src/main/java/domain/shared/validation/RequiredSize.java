@@ -1,5 +1,8 @@
 package domain.shared.validation;
 
+
+
+
 import javax.validation.Constraint;
 import javax.validation.Payload;
 import java.lang.annotation.Documented;
@@ -24,6 +27,6 @@ public @interface RequiredSize {
     int min() default 0;
 
     int max() default 2147483647;
-    
+
     boolean required() default true;
 }

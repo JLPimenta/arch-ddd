@@ -2,7 +2,7 @@ package domain.service.unidade.federativa;
 
 import domain.core.exception.DomainException;
 import domain.core.service.IBaseService;
-import domain.entity.unidade.federativa.UnidadeFederativa;
+import domain.entity.UnidadeFederativa;
 
 public interface IUnidadeFederativaService extends IBaseService<UnidadeFederativa> {
 

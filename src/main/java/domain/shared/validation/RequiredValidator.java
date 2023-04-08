@@ -5,9 +5,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
+
 
 public class RequiredValidator extends LabelConstraintValidator
         implements ConstraintValidator<Required, Object> {
@@ -25,8 +25,8 @@ public class RequiredValidator extends LabelConstraintValidator
 
     @Override
     public boolean isValid(final Object value, final ConstraintValidatorContext context) {
-    	context.disableDefaultConstraintViolation();
-    	
+        context.disableDefaultConstraintViolation();
+
         if (type != RequiredType.ALL) {
             HttpServletRequest httpServletRequest =
                     ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
@@ -43,10 +43,10 @@ public class RequiredValidator extends LabelConstraintValidator
         boolean valid = validate(value);
 
         var labelValue = Message.toLocale(label);
-        
+
         if (!valid) {
             context.buildConstraintViolationWithTemplate(message(defaultMessageCode).replace("{label}", labelValue))
-            	   .addConstraintViolation();
+                    .addConstraintViolation();
         }
         return valid;
     }
