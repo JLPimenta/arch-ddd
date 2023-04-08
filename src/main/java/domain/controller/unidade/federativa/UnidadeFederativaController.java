@@ -13,6 +13,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("/unidades-federativas")
 @Tag(name = "Unidades Federativas")
@@ -25,8 +27,9 @@ public class UnidadeFederativaController extends BaseController<UnidadeFederativ
     @PatchMapping(path = "/ativar/{id}")
     @Transactional
     @Operation(description = "Ativar ou Inativar uma Unidade Federativa")
-    public void ativar(@PathVariable("id") String id, @RequestBody BaseEntityAtivarRequest request) throws DomainException {
-        getService().ativar(id, request.isAtivo());
+    public UnidadeFederativaResponse ativar(@PathVariable("id") String id, @Valid @RequestBody BaseEntityAtivarRequest request) throws DomainException {
+        final var response = getService().ativar(id, request.isAtivo());
+        return getService().map(response, getMapper()::toResponse);
     }
 
     @Override
