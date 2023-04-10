@@ -1,0 +1,31 @@
+-- liquibase formatted sql
+-- changeset JLPimenta:20230409-1-seed-unidade-federativa
+
+INSERT INTO "unidade_federativa" (id_unidade_federativa, nome, sigla, situacao, data_criacao)
+VALUES ('1', 'Acre', 'AC', TRUE, NOW()),
+       ('2', 'Alagoas', 'AL', TRUE, NOW()),
+       ('3', 'Amazonas', 'AM', TRUE, NOW()),
+       ('4', 'Amapá', 'AP', TRUE, NOW()),
+       ('5', 'Bahia', 'BA', TRUE, NOW()),
+       ('6', 'Ceará', 'CE', TRUE, NOW()),
+       ('7', 'Distrito Federal', 'DF', TRUE, NOW()),
+       ('8', 'Espírito Santo', 'ES', TRUE, NOW()),
+       ('9', 'Goiás', 'GO', TRUE, NOW()),
+       ('10', 'Maranhão', 'MA', TRUE, NOW()),
+       ('11', 'Minas Gerais', 'MG', TRUE, NOW()),
+       ('12', 'Mato Grosso do Sul', 'MS', TRUE, NOW()),
+       ('13', 'Mato Grosso', 'MT', TRUE, NOW()),
+       ('14', 'Pará', 'PA', TRUE, NOW()),
+       ('15', 'Paraíba', 'PB', TRUE, NOW()),
+       ('16', 'Pernambuco', 'PE', TRUE, NOW()),
+       ('17', 'Piauí', 'PI', TRUE, NOW()),
+       ('18', 'Paraná', 'PR', TRUE, NOW()),
+       ('19', 'Rio de Janeiro', 'RJ', TRUE, NOW()),
+       ('20', 'Rio Grande do Norte', 'RN', TRUE, NOW()),
+       ('21', 'Rondônia', 'RO', TRUE, NOW()),
+       ('22', 'Roraima', 'RR', TRUE, NOW()),
+       ('23', 'Rio Grande do Sul', 'RS', TRUE, NOW()),
+       ('24', 'Santa Catarina', 'SC', TRUE, NOW()),
+       ('25', 'Sergipe', 'SE', TRUE, NOW()),
+       ('26', 'São Paulo', 'SP', TRUE, NOW()),
+       ('27', 'Tocantins', 'TO', TRUE, NOW());
