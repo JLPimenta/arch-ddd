@@ -1,4 +1,4 @@
-package domain.core.message.locale;
+package com.biblioteca.app.domain.core.message.locale;
 
 
 import org.springframework.context.annotation.Bean;

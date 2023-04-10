@@ -1,4 +1,4 @@
-package domain.model.unidade.federativa;
+package com.biblioteca.app.domain.model.unidade.federativa;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

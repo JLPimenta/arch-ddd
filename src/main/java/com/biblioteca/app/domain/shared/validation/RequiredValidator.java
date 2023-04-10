@@ -1,6 +1,6 @@
-package domain.shared.validation;
+package com.biblioteca.app.domain.shared.validation;
 
-import domain.core.message.Message;
+import com.biblioteca.app.domain.core.message.Message;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;

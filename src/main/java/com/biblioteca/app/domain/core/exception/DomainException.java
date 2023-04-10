@@ -1,4 +1,4 @@
-package domain.core.exception;
+package com.biblioteca.app.domain.core.exception;
 
 public class DomainException extends Exception {
     public DomainException(String s) {

@@ -1,4 +1,4 @@
-package domain.shared.validation;
+package com.biblioteca.app.domain.shared.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
@@ -9,17 +9,21 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Documented
-@Constraint(validatedBy = RequiredValidator.class)
+@Constraint(validatedBy = RequiredSizeValidator.class)
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.ANNOTATION_TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Required {
-    String label() default "";
+public @interface RequiredSize {
+    String label();
 
-    String message() default "{validation.required}";
-
-    RequiredType type() default RequiredType.ALL;
+    String message() default "{validation.size}";
 
     Class<?>[] groups() default {};
 
     Class<? extends Payload>[] payload() default {};
+
+    int min() default 0;
+
+    int max() default 2147483647;
+    
+    boolean required() default true;
 }

@@ -1,6 +1,6 @@
-package domain.shared.validation;
+package com.biblioteca.app.domain.shared.validation;
 
-import domain.core.message.Message;
+import com.biblioteca.app.domain.core.message.Message;
 
 public class LabelConstraintValidator {
     protected String message(String messageCode) {

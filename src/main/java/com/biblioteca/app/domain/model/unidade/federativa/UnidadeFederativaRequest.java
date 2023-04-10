@@ -1,6 +1,6 @@
-package domain.model.unidade.federativa;
+package com.biblioteca.app.domain.model.unidade.federativa;
 
-import domain.shared.validation.RequiredSize;
+import com.biblioteca.app.domain.shared.validation.RequiredSize;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

@@ -1,10 +1,10 @@
-package domain.service.unidade.federativa;
+package com.biblioteca.app.domain.service.unidade.federativa;
 
-import domain.core.exception.DomainException;
-import domain.core.repository.BaseRepository;
-import domain.core.service.BaseService;
-import domain.entity.unidade.federativa.UnidadeFederativa;
-import domain.repository.unidade.federativa.UnidadeFederativaRepository;
+import com.biblioteca.app.domain.entity.unidade.federativa.UnidadeFederativa;
+import com.biblioteca.app.domain.core.exception.DomainException;
+import com.biblioteca.app.domain.core.repository.BaseRepository;
+import com.biblioteca.app.domain.core.service.BaseService;
+import com.biblioteca.app.domain.repository.unidade.federativa.UnidadeFederativaRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,7 +16,7 @@ public class UnidadeFederativaService extends BaseService<UnidadeFederativa> imp
 
     @Override
     public UnidadeFederativa ativar(String id, Boolean ativo) throws DomainException {
-        UnidadeFederativa unidadeFederativa = getRepository().findById(id).orElseThrow(() -> new DomainException("Unidade Federativa não encontrada"));
+        var unidadeFederativa = this.findById(id);
         unidadeFederativa.setSituacao(ativo);
         return getRepository().save(unidadeFederativa);
     }

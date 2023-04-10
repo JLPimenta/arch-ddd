@@ -1,4 +1,4 @@
-package domain.core.message;
+package com.biblioteca.app.domain.core.message;
 
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.context.support.ResourceBundleMessageSource;
