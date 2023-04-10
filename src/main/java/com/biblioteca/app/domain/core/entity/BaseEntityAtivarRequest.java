@@ -1,4 +1,4 @@
-package domain.core.entity;
+package com.biblioteca.app.domain.core.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

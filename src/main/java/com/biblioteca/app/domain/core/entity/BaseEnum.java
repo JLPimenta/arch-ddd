@@ -1,4 +1,4 @@
-package domain.core.entity;
+package com.biblioteca.app.domain.core.entity;
 
 public interface BaseEnum {
     String getId();

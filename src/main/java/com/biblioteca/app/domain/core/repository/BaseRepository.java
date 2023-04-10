@@ -1,6 +1,6 @@
-package domain.core.repository;
+package com.biblioteca.app.domain.core.repository;
 
-import domain.core.entity.BaseEntity;
+import com.biblioteca.app.domain.core.entity.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.NoRepositoryBean;

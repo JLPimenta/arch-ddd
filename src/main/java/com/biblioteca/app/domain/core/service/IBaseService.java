@@ -1,7 +1,7 @@
-package domain.core.service;
+package com.biblioteca.app.domain.core.service;
 
-import domain.core.entity.BaseEntity;
-import domain.core.exception.DomainException;
+import com.biblioteca.app.domain.core.exception.DomainException;
+import com.biblioteca.app.domain.core.entity.BaseEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -50,6 +50,4 @@ public interface IBaseService<T extends BaseEntity> {
     List<T> findAll(Sort sort);
 
     T findById(String id) throws DomainException;
-
-
 }

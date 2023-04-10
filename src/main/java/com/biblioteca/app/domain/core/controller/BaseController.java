@@ -1,9 +1,9 @@
-package domain.core.controller;
+package com.biblioteca.app.domain.core.controller;
 
-import domain.core.entity.BaseEntity;
-import domain.core.exception.DomainException;
-import domain.core.mapper.IBaseMapper;
-import domain.core.service.IBaseService;
+import com.biblioteca.app.domain.core.exception.DomainException;
+import com.biblioteca.app.domain.core.mapper.IBaseMapper;
+import com.biblioteca.app.domain.core.service.IBaseService;
+import com.biblioteca.app.domain.core.entity.BaseEntity;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springdoc.core.converters.models.PageableAsQueryParam;
 import org.springframework.data.domain.Page;

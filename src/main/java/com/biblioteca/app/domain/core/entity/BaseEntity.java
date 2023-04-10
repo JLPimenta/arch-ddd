@@ -1,4 +1,4 @@
-package domain.core.entity;
+package com.biblioteca.app.domain.core.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Column;

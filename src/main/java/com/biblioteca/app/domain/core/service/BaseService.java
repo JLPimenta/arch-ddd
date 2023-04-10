@@ -1,9 +1,9 @@
-package domain.core.service;
+package com.biblioteca.app.domain.core.service;
 
-import domain.core.entity.BaseEntity;
-import domain.core.exception.DomainException;
-import domain.core.message.Message;
-import domain.core.repository.BaseRepository;
+import com.biblioteca.app.domain.core.message.Message;
+import com.biblioteca.app.domain.core.entity.BaseEntity;
+import com.biblioteca.app.domain.core.exception.DomainException;
+import com.biblioteca.app.domain.core.repository.BaseRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

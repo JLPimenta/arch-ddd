@@ -1,7 +1,7 @@
-package domain.core.mapper;
+package com.biblioteca.app.domain.core.mapper;
 
 
-import domain.core.entity.BaseEntity;
+import com.biblioteca.app.domain.core.entity.BaseEntity;
 
 import java.util.List;
 
