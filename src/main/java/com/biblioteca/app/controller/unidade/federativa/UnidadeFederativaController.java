@@ -1,10 +1,9 @@
 package com.biblioteca.app.controller.unidade.federativa;
 
-
 import com.biblioteca.app.domain.core.controller.BaseController;
 import com.biblioteca.app.domain.core.entity.BaseEntityAtivarRequest;
 import com.biblioteca.app.domain.core.exception.DomainException;
-import com.biblioteca.app.domain.entity.unidade.federativa.UnidadeFederativa;
+import com.biblioteca.app.domain.entity.UnidadeFederativa;
 import com.biblioteca.app.domain.model.unidade.federativa.IUnidadeFederativaMapper;
 import com.biblioteca.app.domain.model.unidade.federativa.UnidadeFederativaRequest;
 import com.biblioteca.app.domain.model.unidade.federativa.UnidadeFederativaResponse;

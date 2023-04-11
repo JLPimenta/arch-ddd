@@ -5,4 +5,5 @@
     <include file="db/changelog/changes/20230405-1-migracao-inicial.sql"/>
     <include file="db/changelog/changes/20230407-1-add-unidade-federativa.sql"/>
     <include file="db/changelog/changes/20230410-1-seed-unidade-federativa.sql"/>
+    <include file="db/changelog/changes/20230410-1-add-cidade.sql"/>
 </databaseChangeLog>

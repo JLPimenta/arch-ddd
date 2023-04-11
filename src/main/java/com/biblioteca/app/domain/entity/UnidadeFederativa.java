@@ -1,4 +1,4 @@
-package com.biblioteca.app.domain.entity.unidade.federativa;
+package com.biblioteca.app.domain.entity;
 
 import com.biblioteca.app.domain.core.entity.BaseEntity;
 import jakarta.persistence.Column;
