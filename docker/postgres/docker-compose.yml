@@ -5,9 +5,9 @@ services:
     image: postgres:14.6-alpine
     restart: always
     environment:
-      - POSTGRES_DB=biblioteca-ubec
-      - POSTGRES_USER=biblioteca-ubec
-      - POSTGRES_PASSWORD=biblioteca-ubec
+      - POSTGRES_DB=biblioteca_ubec
+      - POSTGRES_USER=biblioteca_ubec
+      - POSTGRES_PASSWORD=biblioteca_ubec
       - TZ=America/Araguaina
     ports:
       - '5432:5432'
