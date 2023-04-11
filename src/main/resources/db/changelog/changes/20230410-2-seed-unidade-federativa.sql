@@ -1,5 +1,5 @@
 -- liquibase formatted sql
--- changeset JLPimenta:20230409-1-seed-unidade-federativa
+-- changeset JLPimenta:20230409-2-seed-unidade-federativa
 
 INSERT INTO "unidade_federativa" (id_unidade_federativa, nome, sigla, situacao, data_criacao)
 VALUES ('1', 'Acre', 'AC', TRUE, NOW()),
