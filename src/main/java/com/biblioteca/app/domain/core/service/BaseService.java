@@ -28,12 +28,12 @@ public abstract class BaseService<T extends BaseEntity> implements IBaseService<
     }
 
     @Override
-    public T create(T entity) {
+    public T create(T entity) throws DomainException {
         return repository.save(entity);
     }
 
     @Override
-    public <U> U create(T entity, Function<T, ? extends U> converter) {
+    public <U> U create(T entity, Function<T, ? extends U> converter) throws DomainException {
         return converter.apply(create(entity));
     }
 
