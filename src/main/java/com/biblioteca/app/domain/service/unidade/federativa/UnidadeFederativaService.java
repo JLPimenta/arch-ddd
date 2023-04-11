@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UnidadeFederativaService extends BaseService<UnidadeFederativa> implements IUnidadeFederativaService {
 
-    protected UnidadeFederativaService(UnidadeFederativaRepository repository) {
+    protected UnidadeFederativaService(final UnidadeFederativaRepository repository) {
         super(repository);
     }
 

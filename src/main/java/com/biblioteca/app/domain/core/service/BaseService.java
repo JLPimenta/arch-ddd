@@ -60,7 +60,7 @@ public abstract class BaseService<T extends BaseEntity> implements IBaseService<
     }
 
     @Override
-    public void validate(T entity) {
+    public void validate(T entity) throws DomainException {
         // Necessario sobrescrever
     }
 

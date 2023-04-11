@@ -1,7 +1,6 @@
 package com.biblioteca.app.domain.service.cidade;
 
 import com.biblioteca.app.domain.core.exception.DomainException;
-import com.biblioteca.app.domain.core.repository.BaseRepository;
 import com.biblioteca.app.domain.core.service.BaseService;
 import com.biblioteca.app.domain.entity.Cidade;
 import com.biblioteca.app.domain.repository.cidade.CidadeRepository;
@@ -13,7 +12,7 @@ import java.util.List;
 @Service
 public class CidadeService extends BaseService<Cidade> implements ICidadeService {
 
-    protected CidadeService(BaseRepository<Cidade> repository) {
+    protected CidadeService(final CidadeRepository repository) {
         super(repository);
     }
 
